@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "apish-sdk"
-version = "0.3.1"
+version = "0.3.2"
 description = "Official client for api.sh: public web data from around 1,000 websites (search engines, social media, e-commerce, real estate, jobs, travel, news and sports) as clean JSON."
 readme = "README.md"
 license = { text = "MIT" }

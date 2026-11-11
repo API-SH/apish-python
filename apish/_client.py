@@ -14,7 +14,7 @@ from ._endpoints import CREDITS, PAGINATION, AsyncPlatforms, Platforms
 from ._types import CallMeta, CallOptions, Result, TextResult
 from .errors import ApishError
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
 DEFAULT_BASE_URL = "https://api.api.sh"
 
 
