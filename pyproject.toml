@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling==1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apish-sdk"
+version = "0.3.0"
+description = "Official client for api.sh: public web data from around 1,000 websites (search engines, social media, e-commerce, real estate, jobs, travel, news and sports) as clean JSON."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "api.sh", email = "support@api.sh" }]
+keywords = ["api.sh", "apish", "scraping", "web scraping", "tiktok", "instagram", "amazon", "serp", "json"]
+dependencies = ["httpx>=0.24,<1"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.2"]
+
+[project.urls]
+Homepage = "https://api.sh"
+Documentation = "https://api.sh/docs/sdks"
+Source = "https://github.com/API-SH/apish-python"
+Issues = "https://github.com/API-SH/apish-python/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["apish"]
